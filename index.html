@@ -22,7 +22,9 @@
             console.log(deleteConfirm.value)
 
             if(deleteConfirmText === "delete"){
-                deleteBtn.removeAttribute('disabled')
+                deleteBtn.removeAttribute('disabled');
+            }else{
+                deleteBtn.setAttribute("disabled", true);
             }
             
         })
